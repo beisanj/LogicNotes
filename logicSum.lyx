@@ -1,0 +1,2832 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "David"
+\font_typewriter "default" "David"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+לוגיקה למדעי המחשב
+\end_layout
+
+\begin_layout Section*
+הרצאה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\end_layout
+
+\begin_layout Quote
+
+\lang english
+\begin_inset Quotes eld
+\end_inset
+
+If I could begin to be half of what you think of me, I could do about anything...
+ I could even learn how to love
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+...
+ )תכונות ל 
+\begin_inset Formula $X_{B,F}$
+\end_inset
+
+( 
+\end_layout
+
+\begin_layout Section*
+הרצאה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Quotes eld
+\end_inset
+
+I gave my trust, I shed my blood.
+ I held on tight just to end up stung...
+ you were my friend- scorpion!
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בהנתן עולם 
+\begin_inset Formula $W$
+\end_inset
+
+ ובסיס 
+\begin_inset Formula $B$
+\end_inset
+
+ וקבוצת פונקציות מעל 
+\begin_inset Formula $W$
+\end_inset
+
+, הקבוצה 
+\begin_inset Formula $X_{B,F}$
+\end_inset
+
+ קיימת ויחידה.
+ 
+\color red
+כלומר כאשר מתארים קבוצה אינדוקטיבית מספיק להצביע על השלשה הזו.
+ 
+\end_layout
+
+\begin_layout Standard
+איך מראים שקבוצה היא 
+\begin_inset Formula $X_{B,F}$
+\end_inset
+
+? מראים לפי ההגדרה...
+ או משתמשים בהגדרות השקולות הבאות: 
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula $X_{B,F}=\cap\{T\subset W|B\subset T\:and\:T\:is\:closed\:under\:W\}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+- נגדיר:
+\begin_inset Formula $D_{0}=B,D1=D_{0}\cup F(D_{0}),...,D_{i}=D_{i-1}\cup F(D_{i-1}),...$
+\end_inset
+
+, עתה: 
+\begin_inset Formula $X_{B,F}=\cup_{i\in\mathbb{N}}D_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+תחשיב הפסוקים:
+\end_layout
+
+\begin_layout Standard
+נגדיר קבוצות: 
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula $Var=\{p_{i}|i\in\mathbb{N}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula $Symb=\{\wedge,\vee,\rightarrow,\lnot,(,)\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula $W=(Var\cup Symb)^{*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula $B=Var$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula $F=\{F_{\lnot},...\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $WFF=X_{B,F}$
+\end_inset
+
+ תיקרא תחשיב הפסוקים.
+ 
+\end_layout
+
+\begin_layout Standard
+בפרט: 
+\end_layout
+
+\begin_layout Standard
+- אם רוצים להראות שתחשיב הפסוקים אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ משהו )תכונה( יש להראות לפי ההגדרה או השקילויות 
+\end_layout
+
+\begin_layout Standard
+- אם רוצים להראות שתחשיב הפסוקים מקיימת תכונה מסויימת צריך להראות את זה
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+י אנדוציית מבנה
+\end_layout
+
+\begin_layout Standard
+- אם רוצים להראות שאיבר שייך לתחשיב הפסוקים צריך להראות סדרת יצירה לאיבר!
+ 
+\end_layout
+
+\begin_layout Standard
+- ועוד ...
+ 
+\end_layout
+
+\begin_layout Subsection*
+משפט הקריאה היחידה
+\end_layout
+
+\begin_layout Standard
+...
+\end_layout
+
+\begin_layout Subsection*
+סמנטיקה של תחשיב הפסוקים:
+\end_layout
+
+\begin_layout Standard
+נגדיר השמה 
+\begin_inset Formula $z:var\rightarrow\{0,1\}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $Ass=\{z|z:var\rightarrow\{0,1\}\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+הרצאה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+:
+\end_layout
+
+\begin_layout Quotation
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+There's no time, we're losing the light
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר השמה מורחבת 
+\begin_inset Formula $\overline{z}$
+\end_inset
+
+ מעל 
+\begin_inset Formula $WFF$
+\end_inset
+
+ בצורה אינדוקטיבית: 
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $v\in Var$
+\end_inset
+
+: 
+\begin_inset Formula $\exists i\in\mathbb{N},\overline{z}(v)=z(v)=z(p_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סגור: ...
+\end_layout
+
+\begin_layout Standard
+משפט התלות הסופית: בהנתן פסוק 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ ושתי השמות 
+\begin_inset Formula $z_{1},z_{2}$
+\end_inset
+
+ שמקיימות 
+\begin_inset Formula $z_{1}(p_{i})=z_{2}(p_{i})$
+\end_inset
+
+ לכל אטום המופיע בפסוק אזי 
+\begin_inset Formula $z_{1}\vDash\alpha\iff z_{2}\vDash\alpha$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+בצורה הזו, פסוק מתאר טבלת אמת.
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+האם לכל טבלת אמת קיים פסוק שמתאר אותה?
+\end_layout
+
+\begin_layout Standard
+
+\color blue
+לא! אבל תחת תנאים מסויימים, כן.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הגדרה:
+\series default
+ מערכת קשרים שעבורה מתקיים שלכל טבלת אמת יש פסוק שמתאר אותה נקראת מערכת
+ קשרים שלמה.
+\end_layout
+
+\begin_layout Standard
+
+\color red
+יש לחזור על הדוגמאות מההרצאה + הוכחות שמערכת קשרים היא שלמה או לא.
+ 
+\end_layout
+
+\begin_layout Section*
+הרצאה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+:
+\end_layout
+
+\begin_layout Quote
+\begin_inset Quotes eld
+\end_inset
+
+אם ביחד, אז רק לחוד
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פסוק 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ נקרא טאוטולוגיה או אמת לוגית אם לכל השמה 
+\begin_inset Formula $z$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $z\vDash\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+איך נראה שפסוק הוא טאואולוגיה? טבלת אמת )משפט התלות הסופית( או הנחה בשלילה.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+טענה:
+\bar default
+ 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ סתירה אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $\lnot\alpha$
+\end_inset
+
+ טאוטולוגיה.
+ 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ טאוטולוגיה אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $\lnot\alpha$
+\end_inset
+
+ סתירה.
+\end_layout
+
+\begin_layout Standard
+דוגמאות חשובות לטאוטולוגיות:
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula $\alpha\rightarrow(\beta\rightarrow\alpha)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula $\alpha\rightarrow(\beta\rightarrow\gamma)\rightarrow((\alpha\rightarrow\beta)\rightarrow(\alpha\rightarrow\gamma))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula $(\lnot\beta\rightarrow\lnot\alpha)\rightarrow(\alpha\rightarrow\beta)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+נביעה לוגית:
+\end_layout
+
+\begin_layout Standard
+נאמר שפסוק 
+\begin_inset Formula $\beta$
+\end_inset
+
+ נובע לוגית מפסוק 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ אם לכל השמה 
+\begin_inset Formula $z$
+\end_inset
+
+ מתקיים אם 
+\begin_inset Formula $z\vDash\alpha$
+\end_inset
+
+ אז 
+\begin_inset Formula $z\vDash\beta$
+\end_inset
+
+.
+ ונסמן 
+\begin_inset Formula $\alpha\vDash\beta$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+טענה:
+\bar default
+ 
+\begin_inset Formula $\alpha\vDash\beta$
+\end_inset
+
+ אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $\vDash\alpha\rightarrow\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+שקילות לוגית
+\end_layout
+
+\begin_layout Standard
+נאמר ששני פסוקים 
+\begin_inset Formula $\alpha,\beta$
+\end_inset
+
+ שקולים לוגית אם 
+\begin_inset Formula $\alpha\vDash\beta$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\beta\vDash\alpha$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+אינטאיציה: פסוקים שקולים הם פסוקים שמספרים 
+\begin_inset Quotes eld
+\end_inset
+
+אותו הסיפור
+\begin_inset Quotes erd
+\end_inset
+
+.
+ בפרט,כל פסוק שקול לעצמו.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+הרחבת המושגים לקבוצות של פסוקים:
+\end_layout
+
+\begin_layout Standard
+קבוצת פסוקים 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ תיקרא ספיקה אם: 
+\begin_inset Formula $\exists z,\forall\alpha\in\Sigma,z\vDash\alpha$
+\end_inset
+
+.
+ קבוצת פסוקים יכולה להיות אינסופית ויכולה להיות ריקה.
+ בפרט עבור קבוצת פסוקים ריקה היא ספיקה, וכל ההשמות )
+\begin_inset Formula $Ass$
+\end_inset
+
+( מספקות אותה.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+אינטאיציה: 
+\begin_inset Formula $\land$
+\end_inset
+
+ על כל הפסוקים.
+ ונותן לנו דרך לבטא רת זה במקרה האינסופי.
+ בפרט עבור קבוצה סופית ניתן לבטא אותה ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $\underset{\alpha\in X}{\land}\alpha$
+\end_inset
+
+)ורק עבור סופית!(\SpecialChar endofsentence
+ אם הקבוצה ריקה אז הביטוי לא מוגדר.
+ 
+\end_layout
+
+\begin_layout Standard
+יש גם הגדרות לשקילות קבוצות פסוקים ולגרירה לוגית לפסוק מקבוצה.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+טענות נוספות: 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $X\cup\{\alpha\}\vDash\beta$
+\end_inset
+
+ אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $X\vDash\alpha\rightarrow\beta$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X\cup\{\alpha\}\vDash\beta$
+\end_inset
+
+ וגם 
+\begin_inset Formula $X\vDash\alpha$
+\end_inset
+
+ אז 
+\begin_inset Formula $X\vDash\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X\cup\{\alpha\}\vDash\beta$
+\end_inset
+
+ וגם 
+\begin_inset Formula $X\cup\{\lnot\alpha\}\vDash\beta$
+\end_inset
+
+ אזי 
+\begin_inset Formula $X\vDash\beta$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X\vDash\beta$
+\end_inset
+
+ וגם 
+\begin_inset Formula $X\vDash\lnot\beta$
+\end_inset
+
+ אז 
+\begin_inset Formula $X$
+\end_inset
+
+ לא ספיקה.
+ 
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X\cup\{\lnot\alpha\}\vDash\beta$
+\end_inset
+
+ וגם 
+\begin_inset Formula $X\cup\{\lnot\alpha\}\vDash\lnot\beta$
+\end_inset
+
+ אז 
+\begin_inset Formula $X\vDash\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ויש עוד...
+ )
+\numeric on
+3
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+הערה )
+\numeric on
+1
+\numeric off
+(:
+\bar default
+ קבוצת ההשמות המספקות קבוצה 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ מסומנת ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $M(\Sigma)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+הערה )2(:
+\bar default
+ הרצאה מעניינת :(
+\end_layout
+
+\begin_layout Section*
+הרצאה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+: 
+\end_layout
+
+\begin_layout Quote
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+And is all that I might owe you carved on ivory?
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+מערכת הוכחה שלמה
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+הגדרה:
+\bar default
+מעל העולם 
+\begin_inset Formula $WFF_{\{\lnot,\rightarrow\}}$
+\end_inset
+
+וקבוצת פעולות 
+\begin_inset Formula $F=\{MP\}$
+\end_inset
+
+ וקבוצת בסיס 
+\begin_inset Formula $B$
+\end_inset
+
+ נגדיר קבוצה אינדוקטיבית בצורה הבאה:
+\end_layout
+
+\begin_layout Standard
+בסיס 
+\begin_inset Formula $B$
+\end_inset
+
+: אקסיומות-
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $\alpha,\beta,\gamma\in WFF_{\{\lnot,\rightarrow\}}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula $\alpha\rightarrow(\beta\rightarrow\alpha)\in B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula $\alpha\rightarrow(\beta\rightarrow\gamma)\rightarrow((\alpha\rightarrow\beta)\rightarrow(\alpha\rightarrow\gamma))\in B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+- 
+\begin_inset Formula $(\lnot\beta\rightarrow\lnot\alpha)\rightarrow(\alpha\rightarrow\beta)\in B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פעולות)כללי היסק(: יהיו 
+\begin_inset Formula $\alpha,\beta,\gamma\in X_{B,F}$
+\end_inset
+
+.
+ אזי: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $MP(\alpha,\alpha\rightarrow\beta)=\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\gamma\neq\alpha\rightarrow\beta$
+\end_inset
+
+ אזי 
+\begin_inset Formula $MP(\alpha,\gamma)=\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סימון היסק: 
+\begin_inset Formula $MP:\frac{\alpha,\alpha\rightarrow\beta}{\beta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קבוצה זו נקראת קבוצת הפסוקים היכיחים.
+ כאשר לכל 
+\begin_inset Formula $\alpha\in X_{B,F}$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $\vdash\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+הוכחה מתוך הנחות
+\end_layout
+
+\begin_layout Standard
+בהנתן קבוצת פסוקים 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+, הקבוצה 
+\begin_inset Formula $X_{B,F}$
+\end_inset
+
+תכלול גם אם כל הפסוקים שב
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ בבסיס שלה.
+\end_layout
+
+\begin_layout Standard
+סימון 
+\begin_inset Formula $Ded(X):=X_{B,F}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+תכונות של הוכחה מתוך הנחות: 
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\alpha\in X$
+\end_inset
+
+ אז 
+\begin_inset Formula $X\vdash\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $X\subseteq Y$
+\end_inset
+
+ וגם 
+\begin_inset Formula $X\vdash\alpha$
+\end_inset
+
+ אז 
+\begin_inset Formula $Y\vdash\alpha$
+\end_inset
+
+- מונוטוניות
+\end_layout
+
+\begin_layout Enumerate
+אם לכל 
+\begin_inset Formula $\beta\in X$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $Y\vdash\beta$
+\end_inset
+
+ אזי לכל 
+\begin_inset Formula $X\vdash\alpha$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $Y\vdash\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+הוכחה ל-3:
+\end_layout
+
+\begin_layout Standard
+נבנה סדרת יצירה ל
+\begin_inset Formula $\alpha$
+\end_inset
+
+ מתוך 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X\vdash\alpha$
+\end_inset
+
+.
+ אזי קיימת סדרת הוכחה ל 
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vdots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+משפט הדדוקציה:
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $\alpha,\beta\in WFF_{\{\lnot,\rightarrow\}}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $X\subseteq WFF_{\{\lnot,\rightarrow\}}$
+\end_inset
+
+ מתקיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X\vdash\alpha\rightarrow\beta$
+\end_inset
+
+ אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $X\cup\{\alpha\}=\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אינטואיציה: לפעמים יותר נוח לצרף את 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ לקבוצת ההנחות שלנו על מנת להוכיח משהו.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+איך מוכיחים שפסוק יכיח מתוך קבוצה? 
+\end_layout
+
+\begin_layout Standard
+לפי משפט הדדוקציה ואז תכונות או על פי יצירת סדרת הוכחה.
+\end_layout
+
+\begin_layout Subsubsection*
+משפט הנאותות:
+\end_layout
+
+\begin_layout Standard
+לכל פסוק 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ ולכל קבוצת פסוקים 
+\begin_inset Formula $X$
+\end_inset
+
+ מתקיים: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X\vDash\alpha\Leftarrow X\vdash\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+הוכחה: אנדוקציית מבנה
+\end_layout
+
+\begin_layout Subsubsection*
+קבוצת פסוקים עקבית
+\end_layout
+
+\begin_layout Standard
+יש שתי הגדרות שקולות:
+\end_layout
+
+\begin_layout Enumerate
+קבוצת פסוקים 
+\begin_inset Formula $X$
+\end_inset
+
+ נקראת עקבית אם קיים פסוק 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $X\nvdash\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+קבוצת פסוקים 
+\begin_inset Formula $X$
+\end_inset
+
+ נקראת עקבית אם לכל פסוק 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $X\vdash\alpha$
+\end_inset
+
+ או 
+\begin_inset Formula $X\nvdash\lnot\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\color red
+להסתכל על ההוכחה!
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+משפט
+\series default
+: אם 
+\begin_inset Formula $X$
+\end_inset
+
+ ספיקה אז היא עקבית.
+\end_layout
+
+\begin_layout Standard
+הערות: 
+\end_layout
+
+\begin_layout Itemize
+
+\color blue
+כדאי לחשוב האם כללי ההיסק השונים מקיימים את משפט הנאותות 
+\begin_inset Formula $(Ded(X)\subseteq Con(X))$
+\end_inset
+
+.
+ למשל:
+\begin_inset Formula $\frac{\alpha\wedge\beta}{\alpha,\beta},\frac{\alpha}{\lnot\lnot\alpha},\frac{\alpha\rightarrow\beta,\lnot\beta}{\lnot\alpha},\frac{\lnot(\alpha\land\beta)}{\lnot\alpha,\lnot\beta}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+תכונות מעקכת ההוכחה )תרגול(:
+\end_layout
+
+\begin_layout Itemize
+הנחת המבוקש: 
+\begin_inset Formula $\Sigma\vdash\alpha\Leftarrow\alpha\in\Sigma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+סופיות ההוכחה: 
+\begin_inset Formula $\exists\Sigma:|\Sigma|<\infty\wedge\Sigma\subseteq\Gamma,\Sigma\vdash\alpha\Leftarrow\Gamma\vdash\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+מונוטוניות )ראינו(
+\end_layout
+
+\begin_layout Section*
+הרצאה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+:
+\end_layout
+
+\begin_layout Quote
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+It works! Finally, it works! I don't know why, but it does.
+ And that's all that matters 
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+משפט:
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $X$
+\end_inset
+
+ קבוצת פסוקים ויהי 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ פסוק.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $X\cup\{\lnot\alpha\}$
+\end_inset
+
+ לא עקבית אז 
+\begin_inset Formula $x\vdash\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\color red
+להסתכל על ההוכחה של זה!
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+משפט:
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $X$
+\end_inset
+
+ קבוצת פסוקים.
+ אם 
+\begin_inset Formula $X$
+\end_inset
+
+ עקבית אז 
+\begin_inset Formula $X$
+\end_inset
+
+ ספיקה.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+משפט השלמות: 
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $X$
+\end_inset
+
+קבוצת פסוקים ויהי 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ פסוק.
+ 
+\begin_inset Formula $X\vdash\alpha\Leftarrow X\vDash\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+עקביות מקסימלית
+\end_layout
+
+\begin_layout Standard
+קבוצת פסוקים 
+\begin_inset Formula $Y$
+\end_inset
+
+ נקראת עקבית מקסמלית אם היא עקבית וגם לכל פסוק 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $X\vdash\alpha$
+\end_inset
+
+ או 
+\begin_inset Formula $X\vdash\lnot\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+משפטים:
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $X$
+\end_inset
+
+ עקבית אז קיימת 
+\begin_inset Formula $Y$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+מ כך ש 
+\begin_inset Formula $X\subseteq Y$
+\end_inset
+
+: 
+\color red
+הוכחה חשובה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $X$
+\end_inset
+
+ ע
+\begin_inset Quotes erd
+\end_inset
+
+מ אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $|M(X)|=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+משפט הקומפקטיות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Y$
+\end_inset
+
+ עקבית מקסימלית אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ כל תת קבוצה 
+\series bold
+סופית
+\series default
+ שלה היא עקבית.
+\end_layout
+
+\begin_layout Subsubsection*
+טיפים להוכחות מהצורה 
+\begin_inset Formula $:Ded_{N}(\emptyset)\subseteq Con(\emptyset)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+וודא.י שמתקיים עבור כל כללי ההיסק שהפלט הוא אכן טאוטולגיה בהינתן שהקלט טאוטולוגיה
+ וגם עבור האקסיומות שהן אכן טאוטולוגיות
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם זהו אכן המצב, תמשיכ.י להוכחה באנדוקציית מבנה 
+\begin_inset Quotes eld
+\end_inset
+
+רגילה
+\begin_inset Quotes erd
+\end_inset
+
+ וסיימת.ה
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אחרת, וודא.י שכללי ההיסק שלא מקיימים את זאת אכן ניתנים לשימוש ע
+\begin_inset Quotes erd
+\end_inset
+
+י למשל בדיקת האם ניתן בכלל להגיע לביטוי מהצורה של הארגומנטים )קשר מרכזי
+ וכו(
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+אם זהו אכן המצב, הגדיר.י תכונה 
+\begin_inset Formula $T$
+\end_inset
+
+ מתאימה המקיימת 
+\begin_inset Formula $T\subseteq Con(\emptyset)$
+\end_inset
+
+ והראה.י שמתקיים 
+\begin_inset Formula $Ded_{N}(\emptyset)\subseteq T$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+אחרת, כנראה יש להפריך...
+ ואז בהצלחה לכולנו :( 
+\end_layout
+
+\begin_layout Section*
+הרצאה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\numeric off
+:
+\end_layout
+
+\begin_layout Quote
+\noindent
+\align right
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+If I lead you through the fury, will you call to me?
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+גדירות
+\end_layout
+
+\begin_layout Standard
+נאמר שקבוצת השמות 
+\begin_inset Formula $K\subseteq Ass$
+\end_inset
+
+ היא גדירה אם קיימת רבוצת פסוקים 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ שמגדירה אותה.
+ כלומר קיימת 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $M(\Sigma)=K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+גדירות באופן סופי
+\end_layout
+
+\begin_layout Standard
+נאמר שקבוצה השמות 
+\begin_inset Formula $K$
+\end_inset
+
+ היא גדירה באופן סופי אם קיימת 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ סופית שמגדירה אותו.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+משפט: התנאים הבאים שקולים
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $K$
+\end_inset
+
+ גדירה באופן סופי 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $K$
+\end_inset
+
+ גדירה ע
+\begin_inset Quotes erd
+\end_inset
+
+י פסוק יחיד
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $K,Ass\backslash K$
+\end_inset
+
+ גדירות
+\end_layout
+
+\begin_layout Section*
+הרצאה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\numeric off
+:
+\end_layout
+
+\begin_layout Quote
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+Jesse, I don't know what I have done
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\noindent
+תחשיב היחסים
+\end_layout
+
+\begin_layout Standard
+א
+\begin_inset Quotes erd
+\end_inset
+
+ב של השפה: 
+\end_layout
+
+\begin_layout Standard
+\align right
+סימנים שאינם תלויים במילון:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Symb$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+כמתים
+\end_layout
+
+\begin_layout Itemize
+סימן יחס שוויון 
+\begin_inset Formula $\thickapprox$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Var$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סימנים שכן תלויים במילון:
+\end_layout
+
+\begin_layout Itemize
+סימני קבוע :
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $i\in\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+סימני פונקציה: 
+\begin_inset Formula $F_{i,k}$
+\end_inset
+
+עבור 
+\begin_inset Formula $i\in\mathbb{N}$
+\end_inset
+
+ 
+\begin_inset Formula $k\geq1$
+\end_inset
+
+ סימן פונקציה 
+\begin_inset Formula $k$
+\end_inset
+
+ מקומית
+\end_layout
+
+\begin_layout Itemize
+סימני יחסים: 
+\begin_inset Formula $R_{i,k}$
+\end_inset
+
+עבור 
+\begin_inset Formula $i\in\mathbb{N}$
+\end_inset
+
+ 
+\begin_inset Formula $k\geq1$
+\end_inset
+
+ סימן יחס 
+\begin_inset Formula $k$
+\end_inset
+
+ מקומי
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+שורה תחתונה:
+\bar default
+ על מנת להגדיר מילון מספיק לציין סימני קבועים פונקציות ויחסים.
+\end_layout
+
+\begin_layout Subsection*
+שמות עצם:
+\end_layout
+
+\begin_layout Standard
+קבוצה אינדוקטיבית המוגדרת מעל קבוצת המחרוזות הסופיות מעל הא
+\begin_inset Quotes erd
+\end_inset
+
+ב מעל 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\series bold
+בסיס:
+\end_layout
+
+\begin_layout Standard
+משתנים 
+\begin_inset Formula $Var$
+\end_inset
+
+ וסימני קבוע שמופיעים ב 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\series bold
+פעולות: 
+\end_layout
+
+\begin_layout Standard
+לכל סימן פונקציה 
+\begin_inset Formula $k$
+\end_inset
+
+ מקומית 
+\begin_inset Formula $F$
+\end_inset
+
+ שמופיע במילון מוגדרת פעולה 
+\begin_inset Formula $W^{k}\rightarrow W$
+\end_inset
+
+שבהנתן 
+\begin_inset Formula $t_{1},t_{2},...,t_{k}\in W$
+\end_inset
+
+ מחזירה את 
+\begin_inset Formula $F(t_{1},t_{2},...,t_{k})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+משפט הקריאה היחידה לשמות עצם
+\end_layout
+
+\begin_layout Standard
+לכל שם עצם 
+\begin_inset Quotes eld
+\end_inset
+
+יש פירוק יחיד
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+הערה מהמחברת 1
+\bar default
+: בהרצאה הרלוונטית לא הוצג בצורה פורמלית...
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+so don't come for me
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+הערה מהמחברת 2
+\bar default
+: זה יהיה המצב גם בהמשך כשאציג אותו עבור קבוצת הנוסחאות :> 
+\end_layout
+
+\begin_layout Subsection*
+נוסחאות:
+\end_layout
+
+\begin_layout Standard
+קבוצה אינדוקטיבית המוגדרת מעל קבוצת המחרוזות הסופיות מעל הא
+\begin_inset Quotes erd
+\end_inset
+
+ב מעל 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\series bold
+בסיס:
+\end_layout
+
+\begin_layout Standard
+לכל שני ש
+\begin_inset Quotes erd
+\end_inset
+
+ע מעל 
+\begin_inset Formula $\tau$
+\end_inset
+
+ נגדיר שנסמן אותם ע
+\begin_inset Quotes erd
+\end_inset
+
+י 
+\begin_inset Formula $t_{1},t_{2}$
+\end_inset
+
+ מתקיים ש 
+\begin_inset Formula $t_{1}\approx t_{2}$
+\end_inset
+
+ נוסחה.
+ 
+\end_layout
+
+\begin_layout Standard
+לכל סימן יחס 
+\begin_inset Formula $k$
+\end_inset
+
+- מקומי 
+\begin_inset Formula $R$
+\end_inset
+
+ ב 
+\begin_inset Formula $\tau$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $t_{1},t_{2},...,t_{k}$
+\end_inset
+
+ ש
+\begin_inset Quotes erd
+\end_inset
+
+ע מעל 
+\begin_inset Formula $\tau$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R(t_{1},t_{2},...,t_{k})$
+\end_inset
+
+ היא נוסחה.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+אלו ייקראו נוסחאות אטומיות.
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\series bold
+פעולות:
+\end_layout
+
+\begin_layout Itemize
+הפעלת קשרים 
+\end_layout
+
+\begin_layout Itemize
+הפעלת כמתים
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\bar under
+הערה
+\bar default
+: הקפידו על סוגריים! 
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection*
+משפט הקריאה היחידה לנוסחאות:
+\end_layout
+
+\begin_layout Standard
+לכל נוסחה 
+\begin_inset Quotes eld
+\end_inset
+
+יש פירוק יחיד
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+סמנטיקה לתחשיב הפסוקים
+\end_layout
+
+\begin_layout Standard
+בהינתן מילון 
+\begin_inset Formula $\tau=<c_{0},c_{1},...,F_{0},F_{1},...,R_{0},R_{1}>$
+\end_inset
+
+, מבנה עבור המילון ייראה כך: 
+\begin_inset Formula $M=<D^{M},c_{0}^{M},c_{1}^{M},...,F_{0}^{M},F_{1}^{M},...,R_{0}^{M},R_{1}^{M}>$
+\end_inset
+
+.
+ כאשר:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D^{M}\neq\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לכל סימן קבוע 
+\begin_inset Formula $c_{i}$
+\end_inset
+
+ ב 
+\begin_inset Formula $\tau$
+\end_inset
+
+, 
+\begin_inset Formula $c_{i}^{M}\in D^{M}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לכל פונקציה ....
+\end_layout
+
+\begin_layout Subsection*
+הרצאה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\numeric off
+:
+\end_layout
+
+\begin_layout Quote
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+when I ask a good question, people assume I'm a guy.
+ When I ask a stupid question, people assume I'm a girl.
+ 
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+השמות
+\end_layout
+
+\begin_layout Standard
+בהינתן מילון 
+\begin_inset Formula $\tau$
+\end_inset
+
+ ומבנה 
+\begin_inset Formula $M$
+\end_inset
+
+ מעל המילון השמה היא פונקציה 
+\begin_inset Formula $z:\{v_{i}|i\in\mathbb{N}\}\rightarrow D^{M}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\newline$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\series bold
+השמה מורחבת:
+\series default
+ 
+\begin_inset Formula $\overset{-}{z}:term(\tau)\rightarrow D^{M}$
+\end_inset
+
+.
+ מוגדרת צורה הבאה:
+\end_layout
+
+\begin_layout Standard
+בסיס: 
+\begin_inset Formula $\overset{-}{z}(t)=z(t)=z(v_{i})$
+\end_inset
+
+, עבור קבועים פשוט נותנת להם את הקבוע.
+\end_layout
+
+\begin_layout Standard
+ה
+\begin_inset Quotes erd
+\end_inset
+
+א: 
+\begin_inset Formula $t=F(t_{1},...,t_{k})$
+\end_inset
+
+, 
+\begin_inset Formula $\overset{-}{z}(t)=F^{M}(\overset{-}{z}(t_{1}),...,\overset{-}{z}(t_{k}))$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ספיקות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+מתי מבנה 
+\begin_inset Formula $M$
+\end_inset
+
+ מעל מילון 
+\begin_inset Formula $\tau$
+\end_inset
+
+ מספק והשמה 
+\begin_inset Formula $z$
+\end_inset
+
+ מספקים נוסחא?
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+משתנים קשורים ותלויים
+\end_layout
+
+\begin_layout Standard
+משתנה ייקרא משתנה חופשי אם קיים מופע חופשי שלו.
+\end_layout
+
+\begin_layout Subsection*
+משפט אנאלוגי למשפט התלות הסופית
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\tau$
+\end_inset
+
+ מילון ותהי נוסחה 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ מעל 
+\begin_inset Formula $\tau$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $M$
+\end_inset
+
+ מבנה עבור 
+\begin_inset Formula $\tau$
+\end_inset
+
+ ותהיינה 
+\begin_inset Formula $z_{1},z_{2}$
+\end_inset
+
+ השמות עבור 
+\begin_inset Formula $M$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+אם מתקיים 
+\begin_inset Formula $z_{1}(v_{i})=z_{2}(v_{i})$
+\end_inset
+
+ לכל משתנה 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ חופשי ב 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ אז 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ מספקת את 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ מספקת אותה
+\end_layout
+
+\begin_layout Standard
+נוסחה ללא משתנים חופשיים נקראת פסוק.
+\end_layout
+
+\begin_layout Standard
+פסוק לא תלטי בערך ש
+\begin_inset Formula $z$
+\end_inset
+
+ נותנת למשתנים.
+ 
+\end_layout
+
+\begin_layout Part*
+הרצאה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\numeric off
+:
+\end_layout
+
+\begin_layout Quote
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+We haven't had our pizza party yet :(
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+\noindent
+ספיקות של נוסחה
+\end_layout
+
+\begin_layout Standard
+בהינתן מילון 
+\begin_inset Formula $\tau$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נוסחה 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ תיקרא ספיקה אם קיים מבנה 
+\begin_inset Formula $M$
+\end_inset
+
+ והשמה 
+\begin_inset Formula $z$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $M\vDash_{z}\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם קיים מבנה 
+\begin_inset Formula $M$
+\end_inset
+
+ המקיים שלכל 
+\begin_inset Formula $z$
+\end_inset
+
+ 
+\begin_inset Formula $M\vDash_{z}\alpha$
+\end_inset
+
+ המספקים את 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $M\vDash\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם לכל מבנה 
+\begin_inset Formula $M$
+\end_inset
+
+ מתקיין שלכל 
+\begin_inset Formula $z$
+\end_inset
+
+ 
+\begin_inset Formula $M\vDash\alpha$
+\end_inset
+
+, נסמן 
+\begin_inset Formula $\vDash\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נוסחה 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ נקראת סתירה אם לכל מבנה 
+\begin_inset Formula $M$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $z$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
+גרירה לוגית
+\end_layout
+
+\begin_layout Standard
+בהינתן מילון 
+\begin_inset Formula $\tau$
+\end_inset
+
+, נאמר שקבוצת נוסחאות 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ גוררת לוגית 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ אם לכל מבנה 
+\begin_inset Formula $M$
+\end_inset
+
+ והשמה 
+\begin_inset Formula $z$
+\end_inset
+
+ מתקיים שאם 
+\begin_inset Formula $M\vDash_{z}\Sigma$
+\end_inset
+
+ אז 
+\begin_inset Formula $M\vDash_{z}\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+במקרה זה נסמן 
+\begin_inset Formula $\Sigma\vDash\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align right
+אם 
+\begin_inset Formula $\Sigma=\{\beta\}$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula $\Sigma\vDash\alpha$
+\end_inset
+
+ אז נסמן 
+\begin_inset Formula $\beta\vDash\alpha$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\alpha\vDash\beta$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\beta\vDash\alpha$
+\end_inset
+
+ אז נאמר שהם שקולים לוגית ונסמן 
+\begin_inset Formula $\alpha\equiv\beta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\color red
+לעשות דוגמה אחת מכל סוג.
+\end_layout
+
+\begin_layout Subsection*
+גדירות
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $\tau$
+\end_inset
+
+ עבור קבוצת פסוקים 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $M(\Sigma)=\{M|M\vDash\Sigma\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נאמר שקבוצת מבנים 
+\begin_inset Formula $K$
+\end_inset
+
+ היא גדירה אם קיימת קבוצת נוסחאות 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $M(\Sigma)=K$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+משפט הקומפקטיות
+\end_layout
+
+\begin_layout Standard
+קבוצת נוסחאות סגורות נקראת ספיקה אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ לכל תת קבוצה סופית מתקיים שהיא ספיקה.
+\end_layout
+
+\begin_layout Standard
+על מנת להפריך גדירות נשתמש במשפט הזה.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Part*
+הרצאה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\numeric off
+:
+\end_layout
+
+\begin_layout Quote
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+Darker than your brown?
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+הרצאה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+12
+\numeric off
+:
+\end_layout
+
+\begin_layout Quote
+\begin_inset Quotes eld
+\end_inset
+
+
+\lang english
+Are alpha women a thing?
+\lang hebrew
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
